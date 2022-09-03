@@ -26,7 +26,7 @@
             <nav class="page-navigation">
                 <ul class="menu list">
                     <li class="menu-item">
-                        <a class="menu-link link" href="./index.html">Студія</a>
+                        <a class="menu-link current link" href="./index.html">Студія</a>
                     </li>
 
                     <li class="menu-item">
@@ -62,7 +62,7 @@
         <!-- Ефективні рішення для бізнесу -->
         <section class="main-page">
             <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="modal-open-button" type="button">Замовити послугу</button>
+            <button class="modal-open-button" type="button" data-modal-open>Замовити послугу</button>
         </section>
         <section class="section">
             <div class="container">
@@ -124,13 +124,22 @@
                     <li class="list-image">
                         <img class="about-image" src="./images/box1.jpg"
                             alt="Людина набирає текст на клавіатурі перед планшетом" />
+                        <div class="about-text-container">
+                            <p class="about-text">Десктопні додатки</p>
+                        </div>
                     </li>
                     <li class="list-image">
                         <img class="about-image" src="./images/box2.jpg"
                             alt="Людина тримає телефон в руках перед ноутбуком" />
+                        <div class="about-text-container">
+                            <p class="about-text">Мобільні додатки</p>
+                        </div>
                     </li>
                     <li class="list-image">
                         <img class="about-image" src="./images/box3.jpg" alt="Людина обирає колір на екрані планшету" />
+                        <div class="about-text-container">
+                            <p class="about-text">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -417,6 +426,17 @@
             </div>
         </section>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
