@@ -95,6 +95,7 @@ ul {
 }
 
 .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -106,8 +107,12 @@ ul {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
+
+.current {
+    color: var(--accent-color);
+}
+
 
 .menu-link.current::after {
     position: absolute;
@@ -605,6 +610,15 @@ footer {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--primary-color-text-theme-dark);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-current {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     color: var(--primary-color-text-theme-dark);
